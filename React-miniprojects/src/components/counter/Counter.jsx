@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import './index.css'
 
-function App() {
+function Counter() {
   const [counter, setCounter] = useState(0)
 
   function addValue() {
@@ -20,7 +20,7 @@ function App() {
   const backgroundColour =
     counter === 0 ? "grey" : counter < 0 ? "#702963" : "green";
 
-  const textColour = counter === 0 ? "pink" : counter < 0 ? "blue" : "yellow";
+  const textColour = counter === 0 ? "pink" : counter < 0 ? "red" : "#FFFF8F";
 
   return (
     <div
@@ -48,4 +48,4 @@ function App() {
   )
 }
 
-export default App
+export default Counter

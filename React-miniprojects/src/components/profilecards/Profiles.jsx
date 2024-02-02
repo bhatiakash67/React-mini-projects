@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Card from './components/Card.jsx'
+import './index.css'
+import Card from './Card.jsx'
 
-function App() {
+function Profiles() {
 
   return (
     <div>
@@ -22,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default Profiles

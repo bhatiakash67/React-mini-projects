@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './styles.css'
 import data from './data'
 
-function Accordion() {
+function SingleAccordion() {
 
     let [selected, setSelected] = useState(null)
 
@@ -28,7 +28,7 @@ function Accordion() {
                                 </div>
                             );
                         })
-                        : <div>No data available</div>
+                        : <div>No data available.</div>
                 }
             </div>
         </div>
@@ -36,4 +36,4 @@ function Accordion() {
 
 }
 
-export default Accordion
+export default SingleAccordion

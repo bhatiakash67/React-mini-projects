@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.tempcard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.tempcontrolcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 50%;
+    background-color: #2b5870;
+    border: 10px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.tempdisplay {
+    font-size: 60px;
+    margin-top: 50px;
+    border: 10px solid white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+button {
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+    color: #ffffff;
+    background: rgb(105, 104, 104);
+    border: 2px #ffffff solid;
+  }
+  
+  button:hover {
+    background: rgb(184, 184, 184);
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  
+.tempbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.decrease-button {
+    margin-right: 100px;
+}
+
+.neutral {
+    background: rgb(184, 184, 184);
+  }
+  
+  .cold {
+    background: #035aa6;
+  }
+  
+  .hot {
+    background: #ff5200;
+  }

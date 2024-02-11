@@ -4,31 +4,33 @@ import data from './data'
 
 function SingleAccordion() {
 
-    let [selected, setSelected] = useState(null)
+const[selected, setSelected] = useState(null)
 
-    function toggleAccordion(currentValue) {
-        setSelected((prevSelected) => prevSelected !== currentValue ? currentValue : null)
-    }
+function toggleAccordion(value) {
+    setSelected((prevSelected) => 
+        prevSelected !== value ? value : null
+    )
+}
+
     return (
-        <div className='wrapper'>
-            <div className='accordion'>
+        <div className="wrapper">
+            <div className="accordion">
                 {
-                    data && data.length > 0 ?
-                        data.map((itemData) => {
-                            return (
-                                <div className="item" key={itemData.id}>
-                                    <div className="title" onClick={() => toggleAccordion(itemData.id)}>
-                                        <h3>{itemData.question}</h3>
-                                    </div>
-                                    {
-                                        selected === itemData.id ?
-                                            <div className="answer">{itemData.answer}</div>
-                                            : null
-                                    }
-                                </div>
-                            );
-                        })
-                        : <div>No data available.</div>
+                    data && data.length > 0 ?  
+                    data.map((item) => (
+                        <div className="item" key = {item.id}>
+                            <div className="title" onClick={() => {toggleAccordion(item.id)}}>
+                                <h3>{item.question}</h3>
+                            </div>
+                            {
+                                selected === item.id ? <div className="answer">
+                                    {item.answer}</div> :
+                                null
+                            }
+                        </div>
+                    ))
+                    :
+                    <div>No data available</div> 
                 }
             </div>
         </div>

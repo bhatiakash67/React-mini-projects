@@ -1,39 +1,39 @@
-import Reat, { useState } from "react"
+import React, { useState } from "react"
 import "./styles.css"
 import data from "./data"
 
 function MultipleAccordion() {
 
-const[expandedItems, setExpandedItems] = useState({})
+    const [selected, setSelected] = useState({})
 
-function toggleAccordion(id) {
-    setExpandedItems(prevState => ({
-        ...prevState,
-        [id]: !prevState[id]}))
-}
+    function toggleAccordion(value) {
+        setSelected((prevSelected) => ({
+            ...prevSelected,
+            [value]: !prevSelected[value]
+    }))
+        
+    }
 
     return (
         <div className="wrapper">
             <div className="accordion">
-                {
-                    
-                    data && data.length > 0 ? 
-                    
-                    data.map((dataItem) => {
-                        return (
-                            <div className="item" key = {dataItem.id}>
-                                <div onClick = {() => toggleAccordion(dataItem.id)} className="title"><h3>{dataItem.question}</h3></div>
-
-                                {
-                                expandedItems[dataItem.id] ? <div className="answer">{dataItem.answer}</div> : null 
-                                }
+            {
+                data && data.length > 0 ? 
+                data.map((item) => {
+                    return (
+                        <div className="item" key = {item.id}>
+                            <div className="title" onClick={() => toggleAccordion(item.id)}>
+                                <h3>{item.question}</h3>
                             </div>
-
-                        )
-                    })
-
-                    : <div>No data available.</div>
-                }
+                            {
+                                selected[item.id] && <div className="answer">{item.answer}</div>
+                            }
+                        </div>
+                    )
+                })
+                :
+                <div>No data available</div>
+            }
             </div>
         </div>
     )

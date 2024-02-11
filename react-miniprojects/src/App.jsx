@@ -11,8 +11,8 @@ function App () {
     {/* <Counter /> */}
     {/* <Profiles /> */}
     {/* <SingleAccordion /> */}
-    {/* <MultipleAccordion />  */}
-    <TempControlApp />
+    <MultipleAccordion /> 
+    {/* <TempControlApp /> */}
     </>
   )
 }

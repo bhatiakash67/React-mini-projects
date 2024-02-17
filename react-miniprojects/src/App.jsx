@@ -4,6 +4,7 @@ import Counter from './components/1counter/Counter'
 import SingleAccordion from './components/3accordion/SingleAccordion.jsx'
 import MultipleAccordion from './components/3accordion/MultipleAccordion.jsx'
 import TempControlApp from './components/4temp-control-app/TempControl.jsx'
+import StarRating from './components/5-star-rating/StarRating.jsx'
 
 function App () {
   return (
@@ -11,8 +12,9 @@ function App () {
     {/* <Counter /> */}
     {/* <Profiles /> */}
     {/* <SingleAccordion /> */}
-    <MultipleAccordion /> 
+    {/* <MultipleAccordion />  */}
     {/* <TempControlApp /> */}
+    <StarRating />
     </>
   )
 }

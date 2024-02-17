@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.star-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.star-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid black;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+.button-change{
+    display: flex;
+    flex-direction: column;
+}
+
+#starbutton{
+    margin-top: 20px;
+}
+
+.star-content:hover .hovered-star {
+    color: orange; /* Change this to the desired color */
+  }

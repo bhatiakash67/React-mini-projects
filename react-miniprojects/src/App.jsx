@@ -14,7 +14,7 @@ function App () {
     {/* <SingleAccordion /> */}
     {/* <MultipleAccordion />  */}
     {/* <TempControlApp /> */}
-    <StarRating />
+    <StarRating noOfStars= '5' />
     </>
   )
 }

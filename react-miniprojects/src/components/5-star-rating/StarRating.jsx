@@ -4,19 +4,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 
-function StarRating() {
+function StarRating({ noOfStars }) {
 
-  const [starCount, setStarCount] = useState(5)
+  const [selectedStarIndex, setSelectedStarIndex] = useState(null)
+  const [isHovered, setIsHovered] = useState(null);
 
-  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseOver = (currentIndex) => {
+    setIsHovered(currentIndex);
 
-  const handleMouseOver = () => {
-    setIsHovered(true);
   };
 
   const handleMouseOut = () => {
-    setIsHovered(false);
+    setIsHovered(null);
   };
+
+  const handleStarClick = (currentIndex) => {
+    setSelectedStarIndex(currentIndex)
+  }
 
   return (
 
@@ -25,20 +29,29 @@ function StarRating() {
         <div className="button-change">
 
           <div
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}>
-            {Array.from({ length: starCount }, (_, index) => (
+
+            onMouseOut={handleMouseOut}
+          >
+            {Array.from({ length: noOfStars }, (_, index) => (
               <FontAwesomeIcon
                 key={index}
-                icon={isHovered ? solidStar : regularStar}
-                size='2x' 
-                color={isHovered ? '#D5AB55' : undefined } />
-
+                icon= { (isHovered !== null && index <= isHovered) ||
+                  (selectedStarIndex !== null && index <= selectedStarIndex)
+                  ? solidStar
+                  : regularStar
+                }
+                size='5x'
+                className={
+                  (isHovered !== null && index <= isHovered) ||
+                    (selectedStarIndex !== null && index <= selectedStarIndex)
+                    ? 'buttoncolor'
+                    : ''
+                }
+                onMouseOver={() => handleMouseOver(index)}
+                onClick={() => { handleStarClick(index) }} />
             ))}
           </div>
 
-          <div className="buttons">
-          </div>
         </div>
 
       </div>

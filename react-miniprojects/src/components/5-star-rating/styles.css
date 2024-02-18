@@ -6,6 +6,7 @@ body{
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    background-color: lightgray;
 }
 
 .star-rating{
@@ -23,7 +24,7 @@ body{
     border: 20px solid black;
     border-radius: 10px;
     height: 500px;
-    width: 500px;
+    width: 800px;
 }
 
 .button-change{
@@ -31,10 +32,6 @@ body{
     flex-direction: column;
 }
 
-#starbutton{
-    margin-top: 20px;
+.buttoncolor{
+    color: #D5AB55;
 }
-
-.star-content:hover .hovered-star {
-    color: orange; /* Change this to the desired color */
-  }

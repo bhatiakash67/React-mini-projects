@@ -4,7 +4,8 @@ import Counter from './components/1counter/Counter'
 import SingleAccordion from './components/3accordion/SingleAccordion.jsx'
 import MultipleAccordion from './components/3accordion/MultipleAccordion.jsx'
 import TempControlApp from './components/4temp-control-app/TempControl.jsx'
-import StarRating from './components/5-star-rating/StarRating.jsx'
+import StarRating from './components/5star-rating/StarRating.jsx'
+import ColourChanger from './components/6random-colour-generator/ColourChanger.jsx'
 
 function App () {
   return (
@@ -14,7 +15,8 @@ function App () {
     {/* <SingleAccordion /> */}
     {/* <MultipleAccordion />  */}
     {/* <TempControlApp /> */}
-    <StarRating noOfStars= '5' />
+    {/* <StarRating noOfStars= '5' /> */}
+    <ColourChanger />
     </>
   )
 }

@@ -29,10 +29,10 @@ function StarRating({ noOfStars }) {
         <div className="button-change">
 
           <div
+            onMouseOut={handleMouseOut}>
 
-            onMouseOut={handleMouseOut}
-          >
             {Array.from({ length: noOfStars }, (_, index) => (
+              
               <FontAwesomeIcon
                 key={index}
                 icon= { (isHovered !== null && index <= isHovered) ||
@@ -49,6 +49,7 @@ function StarRating({ noOfStars }) {
                 }
                 onMouseOver={() => handleMouseOver(index)}
                 onClick={() => { handleStarClick(index) }} />
+
             ))}
           </div>
 

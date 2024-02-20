@@ -6,6 +6,7 @@ import MultipleAccordion from './components/3accordion/MultipleAccordion.jsx'
 import TempControlApp from './components/4temp-control-app/TempControl.jsx'
 import StarRating from './components/5star-rating/StarRating.jsx'
 import ColourChanger from './components/6random-colour-generator/ColourChanger.jsx'
+import ImageCarousel from './components/7image-carousel/ImageCarousel.jsx'
 
 function App () {
   return (
@@ -16,7 +17,8 @@ function App () {
     {/* <MultipleAccordion />  */}
     {/* <TempControlApp /> */}
     {/* <StarRating noOfStars= '5' /> */}
-    <ColourChanger />
+    {/* <ColourChanger /> */}
+    <ImageCarousel />
     </>
   )
 }

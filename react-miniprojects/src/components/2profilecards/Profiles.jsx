@@ -7,7 +7,7 @@ function Profiles() {
 
   return (
     <div>
-      <h1 className="bg-green-400 tet-black p-4 rounded-xl mb-10 align-middle h-20">Profile cards</h1>
+      <h1 className="text-5xl m-5 bg-green-400 text-black text-center p-4 rounded-xl mb-10 align-middle h-20">Profile cards</h1>
 
       <div className='flex items-center justify-around flex-wrap'>
 

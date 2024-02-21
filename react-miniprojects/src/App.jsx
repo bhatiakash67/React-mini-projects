@@ -7,18 +7,28 @@ import TempControlApp from './components/4temp-control-app/TempControl.jsx'
 import StarRating from './components/5star-rating/StarRating.jsx'
 import ColourChanger from './components/6random-colour-generator/ColourChanger.jsx'
 import ImageCarousel from './components/7image-carousel/ImageCarousel.jsx'
+import QuoteGenerator from './components/8quote-generator/QuoteGenerator.jsx'
 
 function App () {
   return (
     <>
     {/* <Counter /> */}
+    
     {/* <Profiles /> */}
+    
     {/* <SingleAccordion /> */}
+    
     {/* <MultipleAccordion />  */}
+    
     {/* <TempControlApp /> */}
+    
     {/* <StarRating noOfStars= '5' /> */}
+    
     {/* <ColourChanger /> */}
-    <ImageCarousel />
+    
+    {/* <ImageCarousel /> */}
+
+    <QuoteGenerator />
     </>
   )
 }

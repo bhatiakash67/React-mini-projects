@@ -18,19 +18,19 @@ function ImageCarousel() {
     }
 
     return (
-        <div className='page flex flex-wrap justify-center items-center p-0 m-0 h-screen bg-blue-400 rounded-xl'>
+        <div className='page flex flex-wrap justify-center items-center p-0 m-0 h-screen bg-blue-300 rounded-xl relative'>
             <div className='element flex flex-col items-center text-white p-1 rounded-xl md:w-3/4 lg:w-1/2 xl:w-1/3 2xl:w-1/4 mx-auto' style={{ width: '80%', height: '80%' }}>
 
-                <div className='images relavite' style={{ width: '100%', height: '100%' }}>
+                <div className='images' style={{ width: '100%', height: '100%' }}>
                     <img src={images[currentImageIndex]}
-                        alt={`image ${currentImageIndex + 1}`} className='object-cover w-full text-black rounded-xl' style={{ width: '95%', height: '100%', objectFit: 'cover', margin: '0 auto' }} />
+                        alt={`image ${currentImageIndex + 1}`} className='object-cover w-full text-black rounded-xl' style={{ width: '100%', height: '100%', objectFit: 'cover', margin: '0 auto' }} />
 
-                    <button className='left bg-black rounded-full text-white p-2 absolute transform -translate-y-1/2' style={{ top: '60%', left: '20%' }}
+                    <button className='left bg-black rounded-full text-white p-2 absolute transform -translate-y-1/2' style={{ top: '50%', left: '5%' }}
                         onClick={() => moveLeft()}
                     >
                         <FontAwesomeIcon icon={faArrowLeft} size='3x' /></button>
 
-                    <button className='right bg-black text-white rounded-full p-2 absolute transform -translate-y-1/2' style={{ top: '60%', right: '20%' }}
+                    <button className='right bg-black text-white rounded-full p-2 absolute transform -translate-y-1/2' style={{ top: '50%', right: '5%' }}
                         onClick={() => moveRight()}
                     >
                         <FontAwesomeIcon icon={faArrowRight} size='3x' /></button>

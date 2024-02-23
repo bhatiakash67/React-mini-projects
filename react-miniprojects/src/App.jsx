@@ -26,9 +26,9 @@ function App () {
     
     {/* <ColourChanger /> */}
     
-    {/* <ImageCarousel /> */}
+    <ImageCarousel />
 
-    <QuoteGenerator />
+    {/* <QuoteGenerator url="https://api.quotable.io/quotes/random" limit={25} /> */}
     </>
   )
 }

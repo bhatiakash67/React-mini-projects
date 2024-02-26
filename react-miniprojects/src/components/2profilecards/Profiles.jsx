@@ -9,7 +9,7 @@ function Profiles() {
     <div>
       <h1 className="text-5xl m-5 bg-green-400 text-black text-center p-4 rounded-xl mb-10 align-middle h-20">Profile cards</h1>
 
-      <div className='flex items-center justify-around flex-wrap'>
+      <div className='grid-cols-3 justify-around flex-wrap'>
 
         <Card username="Ramya" content="my text evh the release of Letraset sheets containing Lorem Ipsum passages," src = "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=300" />
 

@@ -8,6 +8,8 @@ import StarRating from './components/5star-rating/StarRating.jsx'
 import ColourChanger from './components/6random-colour-generator/ColourChanger.jsx'
 import ImageCarousel from './components/7image-carousel/ImageCarousel.jsx'
 import QuoteGenerator from './components/8quote-generator/QuoteGenerator.jsx'
+import AccordionSelf from './components/9-Accordion/multipleaccordion-without-array/AccordionSelf.jsx'
+import ToggleAccordionWithArray from './components/9-Accordion/accordion-with-array/ToggleAccordionWithArray.jsx'
 
 function App () {
   return (
@@ -26,9 +28,13 @@ function App () {
     
     {/* <ColourChanger /> */}
     
-    <ImageCarousel />
+    {/* <ImageCarousel /> */}
 
     {/* <QuoteGenerator url="https://api.quotable.io/quotes/random" limit={25} /> */}
+
+    {/* <AccordionSelf /> */}
+
+    <ToggleAccordionWithArray />
     </>
   )
 }

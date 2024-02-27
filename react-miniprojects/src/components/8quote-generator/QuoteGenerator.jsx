@@ -8,28 +8,22 @@ function QuoteGenerator({ url, limit }) {
     const [loading, setLoading] = useState(true);
 
     const getNewQuote = async () => {
-
         try {
             setLoading(true)
             const response = await fetch(`${url}?limit=${limit}`)
-
             if (!response.ok) {
-                throw new Error("Failed to fetch quote.")
+                throw Error("Failed to fetch quote.")
             }
-
             const fetchedQuotes = await response.json();
             setQuotes(fetchedQuotes)
-
             const randomIndex = Math.floor(Math.random() * fetchedQuotes.length)
             const { content, author } = fetchedQuotes[randomIndex]
             setQuote(content)
             setAuthor(author)
         }
-
         catch (error) {
             console.error("Error fetching quote:", error)
-        }
-        finally {
+        }finally {
             setLoading(false)
         }
     }

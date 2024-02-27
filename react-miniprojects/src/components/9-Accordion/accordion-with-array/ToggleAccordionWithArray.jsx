@@ -25,6 +25,7 @@ function ToggleAccordionWithArray() {
             }
         })
     }
+    
     const handleAccordionClick = toggle ? multipleAccordion : singleAccordion;
 
     return (
@@ -36,7 +37,7 @@ function ToggleAccordionWithArray() {
                     {toggle ? "Click for Single Accordion" : "Click for Multiple Accordion"}
                 </button>
             </div>
-            
+
             <div className='flex justify-center items-center mt-9'>
                 <div className="innerbody p-5 border-xl w-1/2 bg-gray-200 rounded-2xl">
                     <h1 className='text-5xl font-bold flex p-5'>Frequently Asked Questions</h1>
@@ -52,18 +53,15 @@ function ToggleAccordionWithArray() {
                                         {item.question}
                                         <button
                                             className='text-black p-3'>
-                                            {
-                                                openItems.includes(item.id)
-                                                    ? <FontAwesomeIcon icon={faMinus} /> : <FontAwesomeIcon icon={faPlus} />}
+                                            {openItems.includes(item.id) ?
+                                                <FontAwesomeIcon icon={faMinus} /> : <FontAwesomeIcon icon={faPlus} />}
                                         </button>
                                     </div>
-                                    {
-                                        openItems.includes(item.id) &&
-                                        (
-                                            <div className="answers p-5 text-3xl ">
-                                                {item.answer}
-                                            </div>
-                                        )}
+                                    {openItems.includes(item.id) && (
+                                        <div className="answers p-5 text-3xl ">
+                                            {item.answer}
+                                        </div>
+                                    )}
                                 </div>
                             ))}
                         </div>

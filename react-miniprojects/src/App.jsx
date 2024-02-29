@@ -10,6 +10,9 @@ import ImageCarousel from './components/7image-carousel/ImageCarousel.jsx'
 import QuoteGenerator from './components/8quote-generator/QuoteGenerator.jsx'
 import AccordionSelf from './components/9-Accordion/multipleaccordion-without-array/AccordionSelf.jsx'
 import ToggleAccordionWithArray from './components/9-Accordion/accordion-with-array/ToggleAccordionWithArray.jsx'
+import ToggleAccordionWithAPI from './components/9-Accordion/accordion-with-apidata/ToggleAccordionWithAPI.jsx'
+
+
 
 function App () {
   return (
@@ -34,7 +37,9 @@ function App () {
 
     {/* <AccordionSelf /> */}
 
-    <ToggleAccordionWithArray />
+    {/* <ToggleAccordionWithArray /> */}
+
+    <ToggleAccordionWithAPI />
     </>
   )
 }

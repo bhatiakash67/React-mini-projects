@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import data from './data.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { faPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 function ToggleAccordionWithArray() {
     const [openItems, setOpenItems] = useState([])
@@ -25,7 +25,6 @@ function ToggleAccordionWithArray() {
             }
         })
     }
-    
     const handleAccordionClick = toggle ? multipleAccordion : singleAccordion;
 
     return (
@@ -44,21 +43,20 @@ function ToggleAccordionWithArray() {
                     {data && data.length !== 0 ? (
                         <div>
                             {data.map((item) => (
-                                <div className='q-n-a m-2 h-1/3 bg-gray-100 rounded-2xl p-5 cursor-pointer'
+                                <div className='q-n-a m-3 mt-5 h-1/3 bg-gray-100 rounded-2xl p-5 cursor-pointer hover:scale-[101%]'
                                     key={item.id}
-                                    onClick={() =>
-                                        handleAccordionClick(item.id)
-                                    }>
-                                    <div className='questions flex justify-between items-center text-3xl font-bold'>
+                                    >
+                                    <div className='questions flex justify-between items-center text-3xl font-bold'
+                                    onClick={() => handleAccordionClick(item.id)}>
                                         {item.question}
                                         <button
                                             className='text-black p-3'>
                                             {openItems.includes(item.id) ?
-                                                <FontAwesomeIcon icon={faMinus} /> : <FontAwesomeIcon icon={faPlus} />}
+                                                <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faPlus} />}
                                         </button>
                                     </div>
                                     {openItems.includes(item.id) && (
-                                        <div className="answers p-5 text-3xl ">
+                                        <div className='answers p-5 text-3xl'>
                                             {item.answer}
                                         </div>
                                     )}

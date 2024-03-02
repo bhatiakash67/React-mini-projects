@@ -19,7 +19,7 @@ function App () {
     <>
     {/* <Counter /> */}
     
-    {/* <Profiles /> */}
+    <Profiles />
     
     {/* <SingleAccordion /> */}
     
@@ -39,7 +39,7 @@ function App () {
 
     {/* <ToggleAccordionWithArray /> */}
 
-    <ToggleAccordionWithAPI />
+    {/* <ToggleAccordionWithAPI /> */}
     </>
   )
 }

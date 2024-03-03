@@ -1,30 +1,34 @@
 const userInfo = [
     {
         id: '1',
-        name: 'Ramya',
+        username: 'Ramya',
         bio: 'my text here i the ithe round is the groot keyboard sound of the joy.',
-        btnText: 'Click here'
+        btnText: 'Click here',
+        src: "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=300"
     },
 
     {
         id: '2',
-        name: 'Sunita',
+        username: 'Sunita',
         bio: 'I give the magic the ithe round is the groot keyboard sound of the joy my text here.',
-        btnText: 'Click to go ahead'
+        btnText: 'Click to go ahead',
+        src: "https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=300"
     },
 
     {
         id: '3',
-        name: 'Radha',
+        username: 'Radha',
         bio: 'my text here i the ithe round is the groot keyboard sound of the joy.',
-        btnText: ''
+        btnText: '',
+        src: "https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=300"
     },
 
     {
         id: '4',
-        name: 'Priya',
-        bio: 'my text here i the ithe round is the groot keyboard sound of the joy.',
-        btnText: 'Click to know more'
+        username: 'Priya',
+        bio: 'my text here i the ithe round is the groot keyboard sound of the joy. round is the groot keyboard sound of the joy.',
+        btnText: 'Click to know more',
+        src: 'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300'
     }
 ]
 

@@ -11,15 +11,14 @@ import QuoteGenerator from './components/8quote-generator/QuoteGenerator.jsx'
 import AccordionSelf from './components/9-Accordion/multipleaccordion-without-array/AccordionSelf.jsx'
 import ToggleAccordionWithArray from './components/9-Accordion/accordion-with-array/ToggleAccordionWithArray.jsx'
 import ToggleAccordionWithAPI from './components/9-Accordion/accordion-with-apidata/ToggleAccordionWithAPI.jsx'
-
-
+import LoadMoreData from './components/10-load-more-data/LoadMoreData.jsx'
 
 function App () {
   return (
     <>
     {/* <Counter /> */}
     
-    <Profiles />
+    {/* <Profiles /> */}
     
     {/* <SingleAccordion /> */}
     
@@ -40,6 +39,8 @@ function App () {
     {/* <ToggleAccordionWithArray /> */}
 
     {/* <ToggleAccordionWithAPI /> */}
+
+    <LoadMoreData />
     </>
   )
 }

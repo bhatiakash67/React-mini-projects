@@ -19,21 +19,15 @@ function ImageCarousel() {
 
             const fetchedImages = await response.json()
             setImages(fetchedImages)
-        }
-
-        catch (error) {
+        } catch (error) {
             console.log("Error fetching image:", error);
-        }
-
-        finally {
+        } finally {
             setLoading(false)
         }
     }
 
     useEffect(() => {
-
         getImages()
-
     }, [])
 
     const moveRight = () => {

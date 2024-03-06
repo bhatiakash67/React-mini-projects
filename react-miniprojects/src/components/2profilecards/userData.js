@@ -29,6 +29,30 @@ const userInfo = [
         bio: 'my text here i the ithe round is the groot keyboard sound of the joy. round is the groot keyboard sound of the joy.',
         btnText: 'Click to know more',
         src: 'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300'
+    },
+
+    {
+        id: '4',
+        username: 'Priya',
+        bio: 'my text here i the ithe round is the groot keyboard sound of the joy. round is the groot keyboard sound of the joy.',
+        btnText: 'Click to know more',
+        src: 'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300'
+    },
+
+    {
+        id: '4',
+        username: 'Priya',
+        bio: 'my text here i the ithe round is the groot keyboard sound of the joy. round is the groot keyboard sound of the joy.',
+        btnText: 'Click to know more',
+        src: 'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300'
+    },
+
+    {
+        id: '4',
+        username: 'Priya',
+        bio: 'my text here i the ithe round is the groot keyboard sound of the joy. round is the groot keyboard sound of the joy.',
+        btnText: 'Click to know more',
+        src: 'https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=300'
     }
 ]
 

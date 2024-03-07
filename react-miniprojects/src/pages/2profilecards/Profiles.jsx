@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import './App.css'
-import './index.css'
 import Card from './Card.jsx'
 import userInfo from './userData.js'
+import '../../index.css'
 
 function Profiles() {
 

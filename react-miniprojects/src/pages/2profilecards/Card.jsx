@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Like, DisLike } from '../assets/index'
+import { Like, DisLike } from '../../assets/index'
+import '../../index.css'
 
 function Card({ username, btntext = "Click here", bio, src = "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" }) {
 

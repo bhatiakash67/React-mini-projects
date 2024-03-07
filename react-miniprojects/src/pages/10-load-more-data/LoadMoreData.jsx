@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Like, DisLike } from '../assets/index'
+import { Like, DisLike } from '../../assets/index'
 
 function LoadMoreData() {
 

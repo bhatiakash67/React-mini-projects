@@ -30,7 +30,7 @@ const router = createBrowserRouter(
                         <Route path='star-rating' element={<StarRating />}></Route>
                         <Route path='colour-changer' element={<ColourChanger />}></Route>
                         <Route path='image-carousel' element={<ImageCarousel />}></Route>
-                        <Route path='quote-generator' element={<QuoteGenerator />}></Route>
+                        <Route path='quote-generator' element={<QuoteGenerator url="https://api.quotable.io/quotes/random" limit={25} />}></Route>
                         <Route path='accordion-with-array' element={<ToggleAccordionWithArray />}></Route>
                         <Route path='accordion-with-api' element={<ToggleAccordionWithAPI />}></Route>
                         <Route path='multiple-accordion-with-components' element={<AccordionSelf />}></Route>

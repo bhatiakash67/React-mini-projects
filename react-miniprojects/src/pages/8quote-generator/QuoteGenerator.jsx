@@ -15,6 +15,7 @@ function QuoteGenerator({ url, limit }) {
                 throw Error("Failed to fetch quote.")
             }
             const fetchedQuotes = await response.json();
+            console.log(fetchedQuotes);
             setQuotes(fetchedQuotes)
             const randomIndex = Math.floor(Math.random() * fetchedQuotes.length)
             const { content, author } = fetchedQuotes[randomIndex]

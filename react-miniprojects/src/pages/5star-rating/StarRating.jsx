@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './styles.css'
+import './starstyles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
@@ -27,10 +27,8 @@ function StarRating({ noOfStars }) {
     <div className="star-rating">
       <div className='star-content'>
         <div className="button-change">
-
           <div
             onMouseOut={handleMouseOut}>
-
             {Array.from({ length: noOfStars }, (_, index) => (
               
               <FontAwesomeIcon
@@ -49,16 +47,11 @@ function StarRating({ noOfStars }) {
                 }
                 onMouseOver={() => handleMouseOver(index)}
                 onClick={() => { handleStarClick(index) }} />
-
             ))}
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   )
 }
 

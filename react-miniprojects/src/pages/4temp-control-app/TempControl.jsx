@@ -5,12 +5,12 @@ function TempControlApp() {
 
     const [temp, setTemp] = useState(20)
 
-    function tempColourChange(){
-        if(temp > 30){
+    function tempColourChange() {
+        if (temp > 30) {
             return 'hot'
         }
-        else if(temp < 20){
-return 'cold'
+        else if (temp < 20) {
+            return 'cold'
         }
         else {
             return 'neutral'
@@ -27,9 +27,9 @@ return 'cold'
 
     return (
         <div className="tempcard">
-            <div className= "tempcontrolcard">
-                <div className= {`tempdisplay ${tempColourChange()}`}>
-                {temp}&deg;C
+            <div className="tempcontrolcard">
+                <div className={`tempdisplay ${tempColourChange()}`}>
+                    {temp}&deg;C
                 </div>
 
                 <div className="tempbuttons">

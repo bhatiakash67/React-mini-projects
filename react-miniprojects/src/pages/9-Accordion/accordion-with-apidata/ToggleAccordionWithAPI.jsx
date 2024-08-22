@@ -16,7 +16,7 @@ function ToggleAccordionWithAPI() {
 
         try {
             setLoading(true)
-            const response = await fetch(`https://api.api-ninjas.com/v1/trivia?category=${category}&limit=3`, {
+            const response = await fetch(`https://api.api-ninjas.com/v1/trivia?category=${category}&limit=10`, {
                 method: 'GET',
                 headers: {
                     'X-Api-Key': apiKey,
@@ -63,7 +63,7 @@ function ToggleAccordionWithAPI() {
 
     return (
         <div className="body flex-col justify-center items-center h-screen">
-            <div className='flex justify-center mt-52 w-screen text-white'>
+            <div className='flex justify-center mt-10 w-screen text-white'>
                 <button
                 onClick={toggleAccordion}
                     className='rounded-2xl p-5 bg-black text-2xl hover:text-yellow-500'>
@@ -71,7 +71,7 @@ function ToggleAccordionWithAPI() {
                 </button>
             </div>
 
-            <div className='flex justify-center items-center mt-9'>
+            <div className='flex justify-center items-center m-9'>
                 <div className="innerbody p-5 border-xl w-1/2 bg-gray-200 rounded-2xl">
                     <h1 className='text-5xl font-bold flex p-5'>Frequently Asked Questions</h1>
                     <div>

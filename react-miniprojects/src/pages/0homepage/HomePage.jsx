@@ -3,6 +3,7 @@ import Layout from '../../Layout'
 import Footer from '../../components/footer/Footer'
 import NavBar from '../../components/navbar/NavBar'
 import { Link } from 'react-router-dom'
+import { StarRatingPlaceHolder } from '../../assets'
 
 function HomePage() {
     return (
@@ -42,8 +43,8 @@ function HomePage() {
             </Link>
             {/* Star Rating project */}
             <Link to='star-rating'>
-                <div className='bg-green-100 w-[300px] h-[300px] border-solid border-2 border-black text-5xl p-5 font-bold flex justify-center items-center'>
-                    Star Rating Project
+                <div className='bg-green-100 w-[300px] h-[300px] border-solid border-2 border-black text-5xl p-5 font-bold flex flex-col justify-center items-center'>
+                    Star Rating Project<img src={StarRatingPlaceHolder} alt="star rating placeholder" className='w-fill h-fill object-fill' />
                 </div>
             </Link>
             {/* Colour Changer project */}

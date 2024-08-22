@@ -10,8 +10,7 @@ function MultipleAccordion() {
         setSelected((prevSelected) => ({
             ...prevSelected,
             [value]: !prevSelected[value]
-    }))
-        
+    })) 
     }
 
     return (

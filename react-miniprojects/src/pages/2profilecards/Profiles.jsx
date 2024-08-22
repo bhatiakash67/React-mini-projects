@@ -11,7 +11,7 @@ function Profiles() {
 
       {/* This is the parent div for the cards inside */}
 
-      <div className='bg-gray-500 w-screen h-screen m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-5 gap-x-1 gap-y-1 place-items-center'>
+      <div className='bg-gray-500 w-full h-full m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-5 gap-x-1 gap-y-1 place-items-center'>
 
         {/* Cards are replicated here  */}
         {

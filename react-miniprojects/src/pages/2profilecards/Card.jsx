@@ -26,7 +26,7 @@ function Card({ username, btntext = "Click here", bio, src = "https://images.uns
     }
 
     return (
-        <div className="relative rounded-lg w-[400px] h-[400px] border-8 border-black" >
+        <div className="relative rounded-lg w-fill h-[400px] border-8 border-black" >
             <img
                 src={src}
                 alt="profile pics"
